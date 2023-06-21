@@ -18,6 +18,7 @@ import Home from '../pages/Home';
 import Loading from './Loading';
 import Messages from '../pages/Messages';
 import Profile from '../pages/Profile';
+import Initiate from './Initiate';
 
 const AppRoutes = () => {
   return (
@@ -27,6 +28,7 @@ const AppRoutes = () => {
       <Route path="/messages" element={<RequiredAuth/>}>
         <Route path="" element={<Messages/>}/>
       </Route>
+      <Route path="/initiate" element={<Initiate/>}/>
       <Route path="/profile" element={<RequiredAuth/>}>
         <Route path="" element={<Profile/>}/>
       </Route>
